@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Millat Umidi University Blog</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- including css and fonts -->
+    <link rel="stylesheet" href="style.css">
+    <!-- preconnecting to google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- font awesome icons -->
+    <script src="https://kit.fontawesome.com/c5182e007e.js" crossorigin="anonymous"></script>
+    <!-- poppins font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- header section starts here -->
+    <header class="sub-header">
+        <!-- navigation bar -->
+        <nav>
+            <!-- logo linking to home page -->
+            <a href="index.html"><img src="images/mu_logo.png" alt="MU Logo"></a>
+            <!-- menu icon for mobile view -->
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+            <!-- navigation links -->
+            <div class="nav-links" id="navLinks">
+                <!-- close icon -->
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <!-- navigation menu items -->
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- page title -->
+        <h1>Millat Umidi University Blog</h1>
+    </header>
+
+    <!-- main content starts here -->
+    <main>
+        <!-- blog content section -->
+        <section class="blog-content">
+            <div class="row">
+                <!-- blog left content -->
+                <div class="blog-left">
+                    <!-- blog posts will be inserted here by main.js -->
+                    <div class="comment-box">
+                        <h3>Leave a comment</h3>
+                        <form class="comment-form" action="comment-handler.php" method="post">
+                            <input type="text" name="name" placeholder="Enter Name" required>
+                            <input type="email" name="email" placeholder="Enter Email" required>
+                            <textarea rows="5" name="comment" placeholder="Your comment" required></textarea>
+                            <button type="submit" class="hero-btn red-btn">POST COMMENT</button>
+                        </form>
+                    </div>
+                </div>
+                <!-- blog right content -->
+                <div class="blog-right">
+                    <h3>How to Apply</h3>
+                    <div>
+                        <span>1. Submit an application for admission</span>
+                    </div>
+                    <div>
+                        <span>2. Provide documents confirming your level of education</span>
+                    </div>
+                    <div>
+                        <span>3. Pass the entrance exams</span>
+                    </div>
+                    <div>
+                        <span>4. Pay for your tuition and access your personal account</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- footer section -->
+    <footer>
+        <section class="footer">
+            <h4>About Us</h4>
+            <p>Welcome to our university, where academic excellence meets vibrant campus life. Join our<br>
+                diverse community of learners and discover endless opportunities for growth, innovation, and success.</p>
+            <!-- social media icons -->
+            <div class="icons">
+                <a style="padding: 10px;" href="https://www.facebook.com"> <i class="fa-brands fa-facebook"></i></a> 
+                <a style="padding: 10px;" href="https://www.twitter.com/"> <i class="fa-brands fa-x-twitter"></i></a> 
+                <a style="padding: 10px;" href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>  
+                <a style="padding: 10px;" href="https://www.linkedin.com"> <i class="fa-brands fa-linkedin"></i></a> 
+            </div>
+        </section>
+    </footer>
+
+    <!-- include lenis smooth scrolling library -->
+    <script src="https://unpkg.com/@studio-freight/lenis@latest/bundled/lenis.min.js"></script>
+
+    <!-- include main javascript file -->
+    <script src="main.js"></script>
+</body>
+</html>

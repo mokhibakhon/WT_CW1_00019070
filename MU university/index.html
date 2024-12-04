@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Millat Umidi University</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- including css and fonts -->
+    <link rel="stylesheet" href="style.css">
+    <!-- preconnecting to google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- font awesome icons -->
+    <script src="https://kit.fontawesome.com/628003722a.js" crossorigin="anonymous"></script>
+    <!-- poppins font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- header section starts here -->
+    <header class="sub-header">
+        <!-- navigation bar -->
+        <nav>
+            <!-- logo image linking to home page -->
+            <a href="index.html">
+                <img src="images/mu_logo.png" alt="MU Logo">
+            </a>
+            <!-- menu icon for mobile view -->
+            <i class="fa fa-bars" onclick="showMenu()" aria-hidden="true"></i>
+            <!-- navigation links -->
+            <div class="nav-links" id="navLinks">
+                <!-- close icon for mobile menu -->
+                <i class="fa fa-times" onclick="hideMenu()" aria-hidden="true"></i>
+                <!-- unordered list for navigation items -->
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- hero section -->
+        <div class="hero">
+            <div class="hero-text">
+                <h1>Welcome to Millat Umidi University</h1>
+                <p class="white-text">Your journey to excellence begins here.</p>
+                <a href="course.html" class="hero-btn red-btn">Explore Courses</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- main content starts here -->
+    <main>
+        <!-- about section -->
+        <section class="about-home">
+            <h2>About Millat Umidi University</h2>
+            <div class="row">
+                <div class="about-home-col">
+                    <p>
+                        Millat Umidi University is dedicated to providing quality education and fostering a culture of innovation and excellence. Our diverse range of programs is designed to equip students with the skills and knowledge needed to succeed in today's competitive world.
+                    </p>
+                    <a href="about.html" class="hero-btn">Learn More</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- features section -->
+        <section class="features">
+            <h2>Why Choose Us</h2>
+            <p>Discover the advantages of studying at Millat Umidi University.</p>
+            <div class="row">
+                <!-- feature 1 -->
+                <div class="features-col">
+                    <i class="fas fa-graduation-cap"></i>
+                    <h3>Expert Faculty</h3>
+                    <p>Learn from experienced professionals and industry experts committed to your success.</p>
+                </div>
+                <!-- feature 2 -->
+                <div class="features-col">
+                    <i class="fas fa-laptop-code"></i>
+                    <h3>Modern Facilities</h3>
+                    <p>Access state-of-the-art laboratories, libraries, and learning resources.</p>
+                </div>
+                <!-- feature 3 -->
+                <div class="features-col">
+                    <i class="fas fa-users"></i>
+                    <h3>Global Community</h3>
+                    <p>Join a diverse and inclusive community of students from around the world.</p>
+                </div>
+                <!-- feature 4 -->
+                <div class="features-col">
+                    <i class="fas fa-briefcase"></i>
+                    <h3>Career Support</h3>
+                    <p>Benefit from our dedicated career center that helps you navigate your professional journey.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- testimonials section -->
+        <section class="testimonials">
+            <h2>What Our Students Say</h2>
+            <p>Hear from our alumni about their experiences at Millat Umidi University.</p>
+            <div class="row">
+                <!-- testimonial 1 -->
+                <div class="testimonial-col">
+                    <img src="images/student1.jpeg" alt="Student Testimonial">
+                    <div>
+                        <p>
+                            "Millat Umidi provided me with the knowledge and skills I needed to excel in my career. The faculty was always supportive and encouraging."
+                        </p>
+                        <h3>Rixsiboyev Abdulaziz</h3>
+                        <small>Accounting & Finance (ACCA)</small>
+                    </div>
+                </div>
+                <!-- testimonial 2 -->
+                <div class="testimonial-col">
+                    <img src="images/student2.jpeg" alt="Student Testimonial">
+                    <div>
+                        <p>
+                            "The diverse community and modern facilities at Millat Umidi made my university experience unforgettable. I highly recommend it to prospective students."
+                        </p>
+                        <h3>Dilrabo Abduraimova</h3>
+                        <small>English Language Teaching (CELTA)</small>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- footer section -->
+    <footer>
+        <section class="footer">
+            <h2>About Us</h2>
+            <p>Welcome to our university, where academic excellence meets vibrant campus life. Join our diverse community of learners and discover endless opportunities for growth, innovation, and success.</p>
+            <!-- social media icons -->
+            <div class="icons">
+                <a style="padding: 10px;" href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i></a> 
+                <a style="padding: 10px;" href="https://www.twitter.com/"><i class="fa-brands fa-x-twitter"></i></a> 
+                <a style="padding: 10px;" href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>  
+                <a style="padding: 10px;" href="https://www.linkedin.com"><i class="fa-brands fa-linkedin"></i></a> 
+            </div>
+        </section>
+    </footer>
+
+    <!-- include lenis smooth scrolling library -->
+    <script src="https://unpkg.com/@studio-freight/lenis@latest/bundled/lenis.min.js"></script>
+
+    <!-- include main javascript file -->
+    <script src="main.js"></script>
+</body>
+</html>

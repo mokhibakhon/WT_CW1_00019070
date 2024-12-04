@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Millat Umidi University Courses</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- including css and fonts -->
+    <link rel="stylesheet" href="style.css">
+    <!-- preconnecting to google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    
+    <!-- font awesome icons -->
+    <script src="https://kit.fontawesome.com/628003722a.js" crossorigin="anonymous"></script>
+    <!-- poppins font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- header section starts here -->
+    <header class="sub-header">
+        <!-- navigation bar -->
+        <nav>
+            <!-- logo linking to home page -->
+            <a href="index.html"><img src="images/mu_logo.png" alt="MU Logo"></a>
+            <!-- menu icon for mobile view -->
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+            <!-- navigation links -->
+            <div class="nav-links" id="navLinks">
+                <!-- close icon -->
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <!-- navigation menu items -->
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- page title -->
+        <h1>Our Courses</h1>
+    </header>
+
+    <!-- main content starts here -->
+    <main>
+        <!-- course section -->
+        <section class="course">
+            <h2>Courses We Offer</h2>
+            <p>The program provides a fundamental education and lasts for 4 years. Applicants for bachelor’s programs must have secondary education.</p>
+            <div class="row">
+                <!-- courses will be inserted here by main.js -->
+            </div>
+        </section>
+
+        <!-- facilities section -->
+        <section class="facilities">
+            <h2>Millat Umidi</h2>
+            <p>Don’t miss your chance—enroll at MU University today!</p>
+            <div class="row">
+                <!-- facility column 1 -->
+                <div class="facilities-col">
+                    <img src="images/debate.jpg" alt="MU Clubs">
+                    <h3>MU Clubs</h3>
+                    <p>MU CLUBS is an exciting initiative at our university that offers students the chance to explore their interests, hone their skills, and connect with like-minded peers through a variety of clubs.</p>
+                </div>
+                <!-- facility column 2 -->
+                <div class="facilities-col">
+                    <img src="images/extra.jpg" alt="MU Extra">
+                    <h3>MU Extra</h3>
+                    <p>MU EXTRA offers practical experience and certification in the most in-demand fields, including SMM, Targeting, NO CODE development, as well as advertising management in Google and Yandex.</p>
+                </div>
+                <!-- facility column 3 -->
+                <div class="facilities-col">
+                    <img src="images/career_center.jpg" alt="Career Center">
+                    <h3>Career Center</h3>
+                    <p>MU CAREER CENTER is a specialized project offering a wide range of services that support the professional development of students at Millat Umidi University.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- footer section -->
+    <footer>
+        <section class="footer">
+            <h4>About Us</h4>
+            <p>Welcome to our university, where academic excellence meets vibrant campus life. Join our <br>
+                diverse community of learners and discover endless opportunities for growth, innovation, and success.</p>
+            <!-- social media icons -->
+            <div class="icons">
+                <a style="padding: 10px;" href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i></a> 
+                <a style="padding: 10px;" href="https://www.twitter.com/"><i class="fa-brands fa-x-twitter"></i></a> 
+                <a style="padding: 10px;" href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>  
+                <a style="padding: 10px;" href="https://www.linkedin.com"><i class="fa-brands fa-linkedin"></i></a> 
+            </div>
+        </section>
+    </footer>
+
+    <!-- include lenis smooth scrolling library -->
+    <script src="https://unpkg.com/@studio-freight/lenis@latest/bundled/lenis.min.js"></script>
+
+    <!-- include main javascript file -->
+    <script src="main.js"></script>
+</body>
+</html>

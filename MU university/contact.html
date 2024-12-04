@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Millat Umidi University Contact</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- including css and fonts -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- font awesome icons -->
+    <script src="https://kit.fontawesome.com/628003722a.js" crossorigin="anonymous"></script>
+    <!-- poppins font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,700;0,800;0,900;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- header section -->
+    <header class="sub-header">
+        <!-- navigation bar -->
+        <nav>
+            <!-- logo linking to home page -->
+            <a href="index.html"><img src="images/mu_logo.png" alt=""></a>
+            <!-- menu icon for mobile view -->
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+            <!-- navigation links -->
+            <div class="nav-links" id="navLinks">
+                <!-- close icon for mobile menu -->
+                <i class="fa fa-times" onclick="hideMenu()"></i> 
+                <!-- navigation menu items -->
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- page title -->
+        <h1>Contact Us</h1>
+    </header>
+
+    <!-- main content starts here -->
+    <main>
+        <!-- location section with embedded map -->
+        <section class="location">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3651.274001160354!2d79.1248816!3d21.0736788!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8b00585d86cf:0x546a325a5af65e16!2sMillat%20Umidi%20University!5e0!3m2!1sen!2sus!4v1674977505995!5m2!1sen!2sus"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+
+        <!-- contact us section -->
+        <section class="Contact-Us">
+            <div class="contact-col">
+                <div>
+                    <i class="fa fa-home"></i>
+                    <span>
+                        <h5>Chilonzor 2-Charkh Kamolon 100043, Tashkent</h5>
+                        <p>Tashkent, Uzbekistan</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <span>
+                        <h5>+998 71 200-03-06 </h5>
+                        <p>Monday to Saturday , 9AM TO 8PM</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-envelope-o"></i>
+                    <span>
+                        <h5>admission@millatumidi.uz</h5>
+                        <p>Email Us your Query</p>
+                    </span>
+                </div>
+
+                <div class="contact-col">
+                    <form action="form-handler.php" method="post">
+                        <input type="text" name="name" placeholder="Enter Your Name" required>
+                        <input type="email" name="email" placeholder="Enter email address" required>
+                        <input type="text" name="subject" placeholder="Enter Your Subject" required>
+                        <textarea rows="8" name="message" placeholder="message" required></textarea>
+                        <button type="submit" class="hero-btn red-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- footer section -->
+    <footer>
+        <section class="footer">
+            <h4>About Us</h4>
+            <p>Welcome to our university, where academic excellence meets vibrant campus life. Join our<br>
+                diverse community of learners and discover endless opportunities for growth, innovation, and success.</p>
+            <!-- social media icons -->
+            <div class="icons">
+                <a style="padding: 10px;" href="https://www.facebook.com"> <i class="fa-brands fa-facebook"></i></a> 
+                <a style="padding: 10px;" href="https://www.twitter.com/"> <i class="fa-brands fa-x-twitter"></i></a> 
+                <a style="padding: 10px;" href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>  
+                <a style="padding: 10px;" href="https://www.linkedin.com"><i class="fa-brands fa-linkedin"></i></a> 
+            </div>
+        </section>
+    </footer>
+
+    <!-- include lenis smooth scrolling library -->
+    <script src="https://unpkg.com/@studio-freight/lenis@latest/bundled/lenis.min.js"></script>
+
+    <!-- include main javascript file -->
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Millat Umidi University About Us</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- including css and fonts -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- font awesome icons -->
+    <script src="https://kit.fontawesome.com/628003722a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!-- starting with the header -->
+    <div class="header">
+        <!-- navigation bar -->
+        <div class="nav-container">
+            <!-- using a nav tag for navigation -->
+            <nav>
+                <!-- logo image linking to home page -->
+                <a href="index.html">
+                    <img src="images/mu_logo.png" alt="MU Logo">
+                </a>
+                <!-- menu icon for mobile view -->
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+                <!-- navigation links -->
+                <div class="nav-links" id="navLinks">
+                    <!-- close icon for mobile menu -->
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <!-- unordered list for navigation items -->
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="course.html">COURSE</a></li>
+                        <li><a href="blog.html">BLOG</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <!-- text box containing the page title -->
+        <div class="text-box">
+            <h1>About Us</h1>
+        </div>
+    </div>
+
+    <!-- main content starts here -->
+    <div class="main-content">
+        <!-- about us section -->
+        <section class="about-us">
+            <div class="row">
+                <!-- column for text content -->
+                <div class="about-col">
+                    <h2>Our Goal – Quality Education for Your Successful Career</h2>
+                    <p>
+                        At <em>Millat Umidi</em>, we train high-caliber specialists who are in demand in Uzbekistan and abroad. Start building your professional future with us. 
+                        
+                        For over three years, <em>Millat Umidi</em> has been offering training in relevant, sought-after fields.
+                    </p>
+                    <!-- button to explore courses -->
+                    <a href="course.html" class="hero-btn red-btn">EXPLORE NOW</a>
+                </div>
+                <!-- column for image -->
+                <div class="about-col">
+                    <img src="images/about.png" alt="About Us Image">
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- footer starts here -->
+    <footer>
+        <section class="footer">
+            <h4>About Us</h4>
+            <p>
+                Additionally, MU University collaborates with various national universities, enabling students
+                to seamlessly transition into their chosen professions and directly enroll in the second year of their studies.
+            </p>
+            <!-- social media icons -->
+            <div class="icons">
+                <a style="padding: 10px;" href="https://www.facebook.com">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a style="padding: 10px;" href="https://www.twitter.com/">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+                <a style="padding: 10px;" href="https://www.instagram.com/">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a style="padding: 10px;" href="https://www.linkedin.com">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+            </div>
+        </section>
+    </footer>
+
+    <!-- include lenis smooth scrolling library -->
+    <script src="https://unpkg.com/@studio-freight/lenis@latest/bundled/lenis.min.js"></script>
+
+    <!-- include main javascript file -->
+    <script src="main.js"></script>
+</body>
+</html>
